@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <iostream>
 #include <sqlite3.h>
 
@@ -21,7 +20,7 @@ int main() {
 	char *zErrMsg = 0;
 	int rc;
 
-	rc = sqlite3_open("/../SQL/database.db", &db);
+	rc = sqlite3_open("../SQLite/database.db", &db);
 
 	if( rc ) {
 		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
