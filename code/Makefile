@@ -38,11 +38,11 @@ TAR := tar
 # C flags
 CFLAGS := -std=c11
 # C++ flags
-CXXFLAGS := -std=c++11
+CXXFLAGS := -std=c++11 
 # C/C++ flags
-CPPFLAGS := -g -Wall -Wextra -pedantic
+CPPFLAGS := -g -Wall -Wextra -pedantic 
 # linker flags
-LDFLAGS :=
+LDFLAGS := -l sqlite3
 # linker flags: libraries to link (e.g. -lfoo)
 LDLIBS :=
 # flags required for dependency generation; passed to compilers
